@@ -1,0 +1,26 @@
+{
+  "name": "wiki-parser",
+  "version": "1.0.0",
+  "description": "wikipedia parser",
+  "main": "wiki-parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiranNiranjan/wiki-parser-js.git"
+  },
+  "keywords": [
+    "wiki",
+    "parser",
+    "wikipedia",
+    "parsing",
+    "htmltojson"
+  ],
+  "author": "Kiran Niranjan <kiran@kike.co.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KiranNiranjan/wiki-parser-js/issues"
+  },
+  "homepage": "https://github.com/KiranNiranjan/wiki-parser-js#readme"
+}
