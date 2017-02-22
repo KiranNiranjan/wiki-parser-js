@@ -1,10 +1,12 @@
 {
-  "name": "wiki-parser",
+  "name": "wikiparser",
   "version": "1.0.0",
   "description": "wikipedia parser",
   "main": "wiki-parser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sh startup.sh",
+    "postinstall": "postinstall-build \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/KiranNiranjan/wiki-parser-js/issues"
   },
-  "homepage": "https://github.com/KiranNiranjan/wiki-parser-js#readme"
+  "homepage": "https://github.com/KiranNiranjan/wiki-parser-js#readme",
+  "dependencies": {
+    "postinstall-build": "^2.1.3"
+  }
 }
