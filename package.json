@@ -1,7 +1,7 @@
 {
   "name": "wikiparser",
   "version": "1.0.0",
-  "description": "wikipedia parser",
+  "description": "wikipedia parser a simple and best tool to parse wikipedia",
   "main": "wiki-parser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
