@@ -1,5 +1,5 @@
 before_install:
-  - sudo npm install -g n
+  - nvm install node
   - sudo pip install wikiparser
 language: node_js
 script: "npm test"
