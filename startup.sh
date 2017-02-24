@@ -6,7 +6,7 @@ case $OS in
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
     apt update
-    pip install wikiparser
+    sudo pip install wikiparser
     ;;
   'FreeBSD')
     OS='FreeBSD'
