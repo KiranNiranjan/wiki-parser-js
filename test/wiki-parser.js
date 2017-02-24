@@ -15,7 +15,9 @@
  # limitations under the License.
  */
 
-var wiki = require('../wiki-parser');
+"use strict";
+
+let wiki = require('../wiki-parser');
 
 const should = require("should");
 
