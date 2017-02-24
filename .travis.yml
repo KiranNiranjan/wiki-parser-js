@@ -1,0 +1,4 @@
+before_install:
+  - sudo pip install wikiparser
+language: node_js
+script: "npm test"

@@ -9,6 +9,10 @@ module.exports = {
 
     infoBox: function (url, callback) {
 
+        if (url == "" || url == undefined) {
+            return callback(new Error("URL cannot be null"));
+        }
+
         const type = "INFO_BOX";
         const python = child('python', [__dirname + '/wiki-parser.py', url, type]);
 
@@ -19,7 +23,7 @@ module.exports = {
 
         python.stderr.on('data', (data) => {
             python.kill();
-            console.log(`Error: ${data}`);
+            return callback(new Error(data, null));
         });
 
         python.on('close', (code) => {
@@ -36,6 +40,10 @@ module.exports = {
 
     getParagraph: function (url, callback) {
 
+        if (url == "" || url == undefined) {
+            return callback(new Error("URL cannot be null"));
+        }
+
         const type = "PARAGRAPH";
         const python = child('python', [__dirname + '/wiki-parser.py', url, type]);
 
@@ -46,7 +54,7 @@ module.exports = {
 
         python.stderr.on('data', (data) => {
             python.kill();
-            console.log(`Error: ${data}`);
+            return callback(new Error(data, null));
         });
 
         python.on('close', (code) => {
@@ -63,6 +71,10 @@ module.exports = {
 
     getMainImage: function (url, callback) {
 
+        if (url == "" || url == undefined) {
+            return callback(new Error("URL cannot be null"));
+        }
+
         const type = "IMAGE";
         const python = child('python', [__dirname + '/wiki-parser.py', url, type]);
 
@@ -73,7 +85,7 @@ module.exports = {
 
         python.stderr.on('data', (data) => {
             python.kill();
-            console.log(`Error: ${data}`);
+            return callback(new Error(data, null));
         });
 
         python.on('close', (code) => {
