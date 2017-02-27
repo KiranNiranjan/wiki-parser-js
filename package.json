@@ -4,7 +4,7 @@
   "description": "wikipedia parser a simple and best tool to parse wikipedia",
   "main": "wiki-parser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "sh startup.sh",
     "postinstall": "postinstall-build \"npm run build\""
   },
@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/KiranNiranjan/wiki-parser-js#readme",
   "dependencies": {
-    "postinstall-build": "^2.1.3"
+    "mocha": "^3.2.0",
+    "postinstall-build": "^2.1.3",
+    "should": "^11.2.0"
   }
 }
