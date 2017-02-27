@@ -19,7 +19,7 @@
 
 var wiki = require('../wiki-parser');
 
-const should = require("should");
+var should = require("should");
 
 describe("Wikipedia Parser", function () {
 
