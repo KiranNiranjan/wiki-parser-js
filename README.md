@@ -2,8 +2,8 @@
 
 Simple and best tool to parse wikipedia
 
-```
-sudo npm install wikiparser
+```bash
+npm install wikiparser
 ```
 
 ## Getting Started
@@ -26,15 +26,15 @@ https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-di
 
 ### Require
 
-```
+```javascript
 var wiki = require('wikiparser');
 ```
 
 ### Methods
 
 * infoBox()
-```
-//To get info_box table from wikipedia as json
+```javascript
+// To get info_box table from wikipedia as json
 wiki.infoBox("https://en.wikipedia.org/wiki/Methane", function(err, res) {
     if (err) throw err;
     
@@ -46,7 +46,7 @@ wiki.infoBox("https://en.wikipedia.org/wiki/Methane", function(err, res) {
 ```
 
 * getParagraph()
-```
+```javascript
 //To get Paragraph from wikipedia as json
 wiki.getParagraph("https://en.wikipedia.org/wiki/Methane", function(err, res) {
       if (err) throw err;
@@ -59,7 +59,7 @@ wiki.getParagraph("https://en.wikipedia.org/wiki/Methane", function(err, res) {
 ```
 
 * getMainImage()
-```
+```javascript
 //To get main image from wikipedia
 wiki.getMainImage("https://en.wikipedia.org/wiki/Methane", function(err, res) {
     if (err) throw err;
@@ -73,7 +73,7 @@ wiki.getMainImage("https://en.wikipedia.org/wiki/Methane", function(err, res) {
 
 ### Example
 
-```
+```javascript
 var wiki = require('wikiparser');
 
 wiki.getMainImage("https://en.wikipedia.org/wiki/Methane", function(err, res) {
@@ -92,11 +92,11 @@ Explain how to run the automated tests for this system
 
 ## Built With
 
-wikiparser 1.0.1 python package (KiKe)
+[wikiparser](https://pypi.python.org/pypi/wikiparser) 1.0.1 python package (KiKe)
 
 ## Authors
-KiKe [KiKe.co.in](http://kike.co.in)
+[KiKe](http://kike.co.in)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details
