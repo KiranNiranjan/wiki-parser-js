@@ -41,12 +41,13 @@ module.exports = {
 
         python.on('close', (code) => {
             if (code !== 0) {
-                return callback(new Error(`Error in executing the command and process exited with code ${code}`))
+                python.kill();
+                return callback(code, null);
             }
             if (code === 0) {
                 return callback(null, output);
             } else {
-                console.log(`child process exited with code ${code}`);
+                return callback(new Error("error in code") + code)
             }
         });
     },
@@ -72,12 +73,13 @@ module.exports = {
 
         python.on('close', (code) => {
             if (code !== 0) {
-                return callback(new Error(`Error in executing the command and process exited with code ${code}`))
+                python.kill();
+                return callback(code, null);
             }
             if (code === 0) {
                 return callback(null, output);
             } else {
-                console.log(`child process exited with code ${code}`);
+                return callback(new Error("error in code") + code)
             }
         });
     },
@@ -103,12 +105,13 @@ module.exports = {
 
         python.on('close', (code) => {
             if (code !== 0) {
-                return callback(new Error(`Error in executing the command and process exited with code ${code}`))
+                python.kill();
+                return callback(code, null);
             }
             if (code === 0) {
                 return callback(null, output);
             } else {
-                console.log(`child process exited with code ${code}`);
+                return callback(new Error("error in code") + code)
             }
         });
     }
