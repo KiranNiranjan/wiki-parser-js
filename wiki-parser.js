@@ -36,7 +36,7 @@ module.exports = {
 
         python.stderr.on('data', (data) => {
             python.kill();
-            return callback(new Error(data, null));
+            return callback(data, null);
         });
 
         python.on('close', (code) => {
@@ -67,7 +67,7 @@ module.exports = {
 
         python.stderr.on('data', (data) => {
             python.kill();
-            return callback(new Error(data, null));
+            return callback(data, null);
         });
 
         python.on('close', (code) => {
@@ -98,7 +98,7 @@ module.exports = {
 
         python.stderr.on('data', (data) => {
             python.kill();
-            return callback(new Error(data, null));
+            return callback(data, null);
         });
 
         python.on('close', (code) => {

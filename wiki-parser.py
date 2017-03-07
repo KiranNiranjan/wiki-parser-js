@@ -1,5 +1,5 @@
 import sys
-import wikiparser
+from wikiparser import *
 
 try:
     url = sys.argv[1]
@@ -44,5 +44,6 @@ def main():
         render.getParagraph()
     if type == "IMAGE":
         render.getMainImage()
+
 
 if __name__ == "__main__" : main()

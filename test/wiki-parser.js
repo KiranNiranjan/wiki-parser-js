@@ -17,7 +17,7 @@
 
 "use strict";
 
-var wiki = require('../wiki-parser');
+const wiki = require('../wiki-parser');
 
 const should = require("should");
 
