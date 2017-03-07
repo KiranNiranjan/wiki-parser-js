@@ -1,5 +1,5 @@
 before_install:
-  - sudo pip install wikiparser
+  - sudo python3 -m pip install wikiparser
 language: node_js
 node_js:
   - "6"
