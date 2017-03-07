@@ -16,7 +16,7 @@
 
 "use strict";
 
-const child = require('child_process').execFile;
+const child = require('child_process').spawn;
 
 module.exports = {
 
