@@ -2,6 +2,8 @@
 
 Simple and best tool to parse wikipedia
 
+[![NPM](https://nodei.co/npm/wikiparser.png?compact=true)](https://npmjs.org/package/wikiparser)
+
 [![Build Status](https://travis-ci.org/KiranNiranjan/wiki-parser-js.svg?branch=master)](https://travis-ci.org/KiranNiranjan/wiki-parser-js)
 
 ```bash
