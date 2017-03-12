@@ -1,5 +1,8 @@
 before_install:
-  - sudo apt-get install -y python3-pip
+  - curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
+  - python get-pip.py
+  - apt update
+  - sudo pip3 install wikiparser
 language: node_js
 node_js:
   - "6"
