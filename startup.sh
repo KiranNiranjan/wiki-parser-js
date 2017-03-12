@@ -6,37 +6,37 @@ case $OS in
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
     apt update
-    sudo pip install wikiparser
+    sudo pip3 install wikiparser
     ;;
   'FreeBSD')
     OS='FreeBSD'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    pip install wikiparser
+    sudo pip3 install wikiparser
     ;;
   'CentOS')
     OS='CentOS'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    pip install wikiparser
+    sudo pip3 install wikiparser
     ;;
   'WindowsNT')
     OS='Windows'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    pip install wikiparser
+    sudo pip3 install wikiparser
     ;;
   'Darwin')
     OS='Mac'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    pip install wikiparser
+    sudo pip3 install wikiparser
     ;;
   'SunOS')
     OS='Solaris'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    pip install wikiparser
+    sudo pip3 install wikiparser
     ;;
   'AIX') ;;
   *) ;;

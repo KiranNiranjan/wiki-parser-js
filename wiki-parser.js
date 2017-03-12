@@ -27,7 +27,7 @@ module.exports = {
         }
 
         const type = "INFO_BOX";
-        const python = child('python', [__dirname + '/wiki-parser.py', url, type]);
+        const python = child('python3', [__dirname + '/wiki-parser.py', url, type]);
 
         let output = "";
         python.stdout.on('data', (data) => {
@@ -59,7 +59,7 @@ module.exports = {
         }
 
         const type = "PARAGRAPH";
-        const python = child('python', [__dirname + '/wiki-parser.py', url, type]);
+        const python = child('python3', [__dirname + '/wiki-parser.py', url, type]);
 
         let output = "";
         python.stdout.on('data', (data) => {
@@ -91,7 +91,7 @@ module.exports = {
         }
 
         const type = "IMAGE";
-        const python = child('python', [__dirname + '/wiki-parser.py', url, type]);
+        const python = child('python3', [__dirname + '/wiki-parser.py', url, type]);
 
         let output = "";
         python.stdout.on('data', (data) => {
