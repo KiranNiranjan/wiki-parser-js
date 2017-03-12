@@ -5,7 +5,6 @@ case $OS in
     OS='Linux'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    sudo apt-get install -y python3-pip
     apt update
     sudo pip3 install wikiparser
     ;;
