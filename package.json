@@ -20,7 +20,7 @@
     "htmltojson"
   ],
   "author": "Kiran Niranjan <kiran@kike.co.in>",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/KiranNiranjan/wiki-parser-js/issues"
   },
