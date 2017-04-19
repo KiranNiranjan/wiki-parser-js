@@ -11,31 +11,31 @@ case $OS in
     OS='FreeBSD'
     curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
     sudo python get-pip.py
-    sudo pip install wikiparser
+    sudo python3 -m pip install wikiparser
     ;;
   'CentOS')
     OS='CentOS'
     curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
     sudo python get-pip.py
-    sudo pip install wikiparser
+    sudo python3 -m pip install wikiparser
     ;;
   'WindowsNT')
     OS='Windows'
     curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
     sudo python get-pip.py
-    sudo pip install wikiparser
+    sudo python3 -m pip install wikiparser
     ;;
   'Darwin')
     OS='Mac'
     curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
     sudo python get-pip.py
-    sudo pip install wikiparser
+    sudo python3 -m pip install wikiparser
     ;;
   'SunOS')
     OS='Solaris'
     curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
     sudo python get-pip.py
-    sudo pip install wikiparser
+    sudo python3 -m pip install wikiparser
     ;;
   'AIX') ;;
   *) ;;
