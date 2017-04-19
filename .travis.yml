@@ -1,16 +1,14 @@
 sudo: required
-language: node_js
+language: node_js python
 node_js:
   - "6"
 python:
   - "3.6"
 before_install:
-  - curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
-  - sudo python get-pip.py
   - python3 -V
-  - python3 -m pip install wikiparser
+  - pip install wikiparser
 install:
   - npm install
-  - python3 -m pip install wikiparser
+  - pip install wikiparser
 language: node_js
 script: "npm test"
