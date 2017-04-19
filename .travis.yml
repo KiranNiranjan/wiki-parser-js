@@ -7,8 +7,6 @@ python:
 before_install:
   - curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
   - sudo python get-pip.py
-  - sudo pip3 install -U setuptools
-  - sudo pip3 install -U virtualenvwrapper
   - python3 -V
   - pip3 -V
   - sudo pip install wikiparser
