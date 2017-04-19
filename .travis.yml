@@ -5,7 +5,8 @@ node_js:
 python:
   - "3.6"
 before_install:
-  - sudo apt-get -y install python3-pip python-dev
+  - curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
+  - sudo python get-pip.py
   - sudo pip3 install -U setuptools
   - sudo pip3 install -U virtualenvwrapper
   - python3 -V
