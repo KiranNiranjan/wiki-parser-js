@@ -8,9 +8,9 @@ before_install:
   - curl "https://bootstrap.pypa.io/get-pip.py | python3" -o "get-pip.py"
   - sudo python get-pip.py
   - python3 -V
-  - sudo pip install wikiparser
+  - sudo python3.2 -m pip install wikiparser
 install:
   - npm install
-  - sudo pip install wikiparser
+  - sudo python3.2 -m pip install wikiparser
 language: node_js
 script: "npm test"
