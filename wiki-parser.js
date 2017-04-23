@@ -27,8 +27,8 @@ module.exports = {
         }
 
         const type = "INFO_BOX";
-        console.log(child('python', ' -V'));
-        console.log(child('python3', ' -V'));
+        console.log(child('python', 'python -V'));
+        console.log(child('python3', 'python3 -V'));
         const python = child('python3', [__dirname + '/wiki-parser.py', url, type]);
 
         let output = "";
