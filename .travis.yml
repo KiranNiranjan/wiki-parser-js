@@ -10,6 +10,5 @@ before_install:
   - sudo apt-get install python3
 install:
   - npm install
-  - sudo pip install wikiparser
-  - sudo python -m pip install wikiparser
+  - sudo python3 -m pip install wikiparser
 script: "npm test"
