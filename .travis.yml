@@ -11,5 +11,7 @@ before_install:
   - sudo easy_install3 pip
 install:
   - npm install
+  - virtualenv -p /usr/bin/python3 py3env
+  - source py3env/bin/activate
   - sudo python -m pip install wikiparser
 script: "npm test"
