@@ -7,8 +7,9 @@ python:
   - "3.6"
 before_install:
   - sudo apt-get update
-  - sudo apt-get install python3
+  - sudo apt-get install python3-setuptools
+  - sudo easy_install3 pip
 install:
   - npm install
-  - sudo python3 -m pip install wikiparser
+  - sudo pip3 install wikiparser
 script: "npm test"
