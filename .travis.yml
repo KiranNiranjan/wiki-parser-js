@@ -6,6 +6,7 @@ python:
   - "3.5"
   - "3.6"
 before_install:
+  - alias python='python3'
   - sudo apt-get update
   - sudo apt-get install python3-setuptools
   - sudo easy_install3 pip
