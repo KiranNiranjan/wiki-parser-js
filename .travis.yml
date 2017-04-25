@@ -12,6 +12,5 @@ before_install:
   - sudo easy_install3 pip
 install:
   - npm install
-  - python -V
   - python -m pip install wikiparser
 script: "npm test"
