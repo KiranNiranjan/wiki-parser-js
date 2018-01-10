@@ -1,4 +1,5 @@
 import sys
+import json
 from wikiparser import *
 
 try:
@@ -18,6 +19,7 @@ class Path:
     def infoBox(self):
         try:
             infoBoxData =  wikiparser.infoBox(self._url)
+            infoBoxData = json.dumps(infoBoxData)
             print(infoBoxData)
         except IOError as error:
             print(error)
@@ -25,6 +27,7 @@ class Path:
     def getParagraph(self):
         try:
             paragraph = wikiparser.getParagraph(self._url)
+            paragraph = json.dumps(paragraph)
             print(paragraph)
         except IOError as error:
             print(error)
@@ -32,6 +35,7 @@ class Path:
     def getMainImage(self):
         try:
             mainImage = wikiparser.getMainImage(self._url)
+            mainImage = json.dumps(mainImage)
             print(mainImage)
         except IOError as error:
             print(error)
