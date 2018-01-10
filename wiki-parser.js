@@ -22,13 +22,11 @@ module.exports = {
 
     infoBox: function (url, callback) {
 
-        if (url == "" || url == undefined) {
+        if (url === "" || url === undefined) {
             return callback(new Error("URL cannot be null"));
         }
 
         const type = "INFO_BOX";
-        console.log(child('python', 'python -V'));
-        console.log(child('python3', 'python3 -V'));
         const python = child('python3', [__dirname + '/wiki-parser.py', url, type]);
 
         let output = "";
@@ -57,7 +55,7 @@ module.exports = {
 
     getParagraph: function (url, callback) {
 
-        if (url == "" || url == undefined) {
+        if (url === "" || url === undefined) {
             return callback(new Error("URL cannot be null"));
         }
 
@@ -90,7 +88,7 @@ module.exports = {
 
     getMainImage: function (url, callback) {
 
-        if (url == "" || url == undefined) {
+        if (url === "" || url === undefined) {
             return callback(new Error("URL cannot be null"));
         }
 
